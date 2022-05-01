@@ -31,6 +31,13 @@ public class PanelPopulator : MonoBehaviour
         
     }
 
+    public void setData(TextAsset dat)
+    {
+        data = dat;
+        initOptions();
+        PopulateOptions();
+    }
+
     void initOptions()
     {
         string[] lines = data.text.Split("\n"[0]);
